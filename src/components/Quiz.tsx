@@ -301,53 +301,17 @@ export default function Quiz() {
                   </div>
                 ) : (
                   /* FINAL STEP - LEAD FORM */
-                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                    {/* Left side: Trust & Value points */}
-                    <div className="lg:col-span-5 bg-brand-light p-6 rounded-lg flex flex-col justify-between">
-                      <div>
-                        <div className="inline-block bg-green-100 text-green-800 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded mb-4 tracking-wider">
-                          Гарантированный подарок
-                        </div>
-                        <h4 className="font-display font-bold text-lg text-brand-blue mb-4">
-                          В подарок вместе с каталогом:
-                        </h4>
-                        
-                        <ul className="space-y-3.5 text-sm my-4 text-brand-dark">
-                          <li className="flex items-start gap-2.5">
-                            <span className="text-green-500 shrink-0 select-none">✔</span>
-                            <span>Брошюра: <strong>«Чек-лист: как проверить контейнер перед отгрузкой»</strong></span>
-                          </li>
-                          <li className="flex items-start gap-2.5">
-                            <span className="text-green-500 shrink-0 select-none">✔</span>
-                            <span>Купон на скидку <strong>10 000 рублей</strong> при заказе до конца недели</span>
-                          </li>
-                          <li className="flex items-start gap-2.5">
-                            <span className="text-green-500 shrink-0 select-none">✔</span>
-                            <span>Индивидуальный расчет стоимости доставки в течение 10 минут</span>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div className="border-t border-gray-200 pt-4 mt-4 text-xs text-brand-grey space-y-2">
-                        <p className="flex items-center gap-1.5 font-semibold text-brand-blue">
-                          Актуальность цен и остатков: сегодня
-                        </p>
-                        <p>Указанные вами параметры зафиксированы за менеджером направления.</p>
-                      </div>
+                  <div className="max-w-2xl mx-auto">
+                    <div className="mb-5">
+                      <h3 className="text-xl md:text-2xl font-display font-extrabold text-brand-blue tracking-tight leading-tight">
+                        Заберите ваш PDF-каталог
+                      </h3>
+                      <p className="text-xs text-brand-grey mt-1">
+                        Заполните контактную информацию. Никакого телефонного спама — вышлем только запрошенные файлы.
+                      </p>
                     </div>
 
-                    {/* Right side: Lead capture form */}
-                    <div className="lg:col-span-7">
-                      <div className="mb-5">
-                        <h3 className="text-xl md:text-2xl font-display font-extrabold text-brand-blue tracking-tight leading-tight">
-                          Заберите ваш PDF-каталог курьером мессенджера
-                        </h3>
-                        <p className="text-xs text-brand-grey mt-1">
-                          Заполните контактную информацию. Никакого телефонного спама — вышлем только запрошенные файлы.
-                        </p>
-                      </div>
-
-                      <form onSubmit={handleSubmit} className="space-y-4">
+                    <form onSubmit={handleSubmit} className="space-y-4">
                         <div>
                           <label className="block text-xs font-semibold text-brand-blue mb-1 uppercase tracking-wide">
                             Ваше имя <span className="text-red-500">*</span>
@@ -470,7 +434,6 @@ export default function Quiz() {
                         </div>
                       </form>
                     </div>
-                  </div>
                 )}
               </motion.div>
             ) : (
