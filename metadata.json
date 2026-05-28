@@ -1,0 +1,6 @@
+{
+  "name": "РефЭкспресс — Универсальные контейнеры",
+  "description": "Полнофункциональный лендинг и квиз для подбора универсальных контейнеров 20 и 40 футов.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-blue: #1c497d;
+  --color-brand-blue-hover: #14375e;
+  --color-brand-orange: #f25a24;
+  --color-brand-orange-hover: #d64714;
+  --color-brand-light: #f6f8fa;
+  --color-brand-dark: #222222;
+  --color-brand-grey: #555555;
+  --color-brand-white: #ffffff;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-brand-dark);
+    background-color: var(--color-brand-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar styling for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f6f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2a4a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-orange);
+}
