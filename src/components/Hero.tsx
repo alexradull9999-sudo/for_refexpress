@@ -42,9 +42,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-brand-orange text-xs font-display font-extrabold uppercase tracking-wide mb-6"
+              className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-amber-300 text-xs font-display font-extrabold uppercase tracking-wide mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-amber-300 animate-pulse" />
               Склады в 10+ городах РФ • Официальный импортер
             </motion.div>
 
@@ -55,7 +55,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold tracking-tight leading-tight uppercase mb-6"
             >
-              Универсальные контейнеры <span className="text-brand-orange">20 и 40 футов</span> напрямую от производителя с доставкой по ВСЕЙ России
+              Универсальные контейнеры <span className="text-amber-300">20 и 40 футов</span> напрямую от производителя с доставкой по ВСЕЙ России
             </motion.h1>
 
             {/* Subtitle */}
@@ -76,26 +76,26 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8"
             >
-              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10 hover:border-brand-orange/30 transition duration-300">
-                <Award className="w-7 h-7 text-brand-orange shrink-0" />
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10 hover:border-amber-300/30 transition duration-300">
+                <Award className="w-7 h-7 text-amber-400 shrink-0" />
                 <div className="leading-tight">
-                  <span className="block font-display font-extrabold text-brand-orange uppercase text-xs">12 лет</span>
+                  <span className="block font-display font-extrabold text-amber-300 uppercase text-xs">12 лет</span>
                   <span className="text-xs text-gray-300">опыта на рынке РФ</span>
                 </div>
               </div>
               
-              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10 hover:border-brand-orange/30 transition duration-300">
-                <ClipboardList className="w-7 h-7 text-brand-orange shrink-0" />
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10 hover:border-amber-300/30 transition duration-300">
+                <ClipboardList className="w-7 h-7 text-amber-400 shrink-0" />
                 <div className="leading-tight">
-                  <span className="block font-display font-extrabold text-brand-orange uppercase text-xs">800+ шт</span>
+                  <span className="block font-display font-extrabold text-amber-300 uppercase text-xs">1200+ шт</span>
                   <span className="text-xs text-gray-300">в обороте ежегодно</span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10 hover:border-brand-orange/30 transition duration-300">
-                <MapPin className="w-7 h-7 text-brand-orange shrink-0" />
+              <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10 hover:border-amber-300/30 transition duration-300">
+                <MapPin className="w-7 h-7 text-amber-400 shrink-0" />
                 <div className="leading-tight">
-                  <span className="block font-display font-extrabold text-brand-orange uppercase text-xs">Вся Россия</span>
+                  <span className="block font-display font-extrabold text-amber-300 uppercase text-xs">Вся Россия</span>
                   <span className="text-xs text-gray-300">транспортировка ТК</span>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function Hero() {
             </span>
 
             {/* Container Type 1 Product Frame */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 hover:border-brand-orange/40 transition duration-300 relative group overflow-hidden shadow-lg">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 hover:border-amber-300/40 transition duration-300 relative group overflow-hidden shadow-lg">
               <div className="relative h-44 rounded-lg overflow-hidden bg-gray-900">
                 <img 
                   src={containerImg} 
@@ -147,7 +147,7 @@ export default function Hero() {
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100"
                 />
                 {/* Visual Badges overlay */}
-                <div className="absolute top-2 left-2 bg-brand-orange text-brand-blue font-display font-extrabold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide shadow-sm">
+                <div className="absolute top-2 left-2 bg-white text-brand-blue font-display font-extrabold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide shadow-sm">
                   В наличии на терминалах
                 </div>
                 <div className="absolute bottom-2 right-2 bg-brand-blue text-white font-mono text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">
@@ -158,14 +158,14 @@ export default function Hero() {
                 <span className="font-display font-bold text-xs uppercase text-white">
                   Сухогрузный контейнер 20 фт (Новый)
                 </span>
-                <span className="text-brand-orange font-bold text-xs font-mono">
+                <span className="text-amber-300 font-bold text-xs font-mono">
                   Заводское качество
                 </span>
               </div>
             </div>
 
             {/* Container Type 2 Product Frame */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 hover:border-brand-orange/40 transition duration-300 relative group overflow-hidden shadow-lg">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 hover:border-amber-300/40 transition duration-300 relative group overflow-hidden shadow-lg">
               <div className="relative h-44 rounded-lg overflow-hidden bg-gray-900">
                 <img 
                   src={containerImg2} 
@@ -175,7 +175,7 @@ export default function Hero() {
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100"
                 />
                 {/* Visual Badges overlay */}
-                <div className="absolute top-2 left-2 bg-brand-orange text-brand-blue font-display font-extrabold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide shadow-sm">
+                <div className="absolute top-2 left-2 bg-white text-brand-blue font-display font-extrabold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide shadow-sm">
                   Под заказ и в наличии
                 </div>
                 <div className="absolute bottom-2 right-2 bg-brand-blue text-white font-mono text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">
@@ -186,7 +186,7 @@ export default function Hero() {
                 <span className="font-display font-bold text-xs uppercase text-white">
                   Сухогрузный контейнер 40 HC (Новый)
                 </span>
-                <span className="text-brand-orange font-bold text-xs font-mono">
+                <span className="text-amber-300 font-bold text-xs font-mono">
                   Сертификат РС
                 </span>
               </div>
@@ -200,10 +200,10 @@ export default function Hero() {
         <div className="mt-14 flex justify-center lg:justify-start">
           <button
             onClick={handleScrollToWhy}
-            className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gray-400 hover:text-brand-orange transition duration-200 cursor-pointer group"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gray-400 hover:text-amber-300 transition duration-200 cursor-pointer group"
           >
             <span>Узнать подробнее о преимуществах</span>
-            <ArrowDown className="w-3.5 h-3.5 animate-bounce text-brand-orange group-hover:scale-110" />
+            <ArrowDown className="w-3.5 h-3.5 animate-bounce text-amber-400 group-hover:scale-110" />
           </button>
         </div>
 

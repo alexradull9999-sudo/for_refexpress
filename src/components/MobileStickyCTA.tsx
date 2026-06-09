@@ -35,7 +35,7 @@ export default function MobileStickyCTA() {
           className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white py-3 px-4 rounded-md font-display font-extrabold text-xs sm:text-sm uppercase tracking-wide flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer select-none"
         >
           <ClipboardCheck className="w-4 h-4 shrink-0" />
-          <span>Пройти квиз — Получить каталог</span>
+          <span>Пройти опрос — Получить каталог</span>
         </button>
       </div>
     </div>

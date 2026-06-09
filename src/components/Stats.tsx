@@ -74,7 +74,7 @@ export default function Stats() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-display font-extrabold tracking-tight uppercase leading-tight">
-            РефЭкспресс в <span className="text-brand-orange">цифрах</span>
+            РефЭкспресс в <span className="text-amber-300">цифрах</span>
           </h2>
           <p className="text-xs text-gray-400 mt-2 uppercase tracking-widest font-semibold">
             Показатели надежности B2B-партнёрства
@@ -86,10 +86,10 @@ export default function Stats() {
           {STATS_ITEMS.map((item, index) => (
             <div 
               key={index}
-              className="p-6 bg-white/5 rounded-xl border border-white/10 hover:border-brand-orange/20 transition-all duration-300 transform hover:scale-[1.02]"
+              className="p-6 bg-white/5 rounded-xl border border-white/10 hover:border-amber-300/20 transition-all duration-300 transform hover:scale-[1.02]"
             >
               {/* Animated value text */}
-              <div className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-brand-orange mb-3 leading-none flex items-center justify-center">
+              <div className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-amber-400 mb-3 leading-none flex items-center justify-center">
                 <span>{counts[index]}</span>
                 <span className="text-2xl sm:text-3xl md:text-4xl text-white select-none whitespace-pre">
                   {item.suffix}

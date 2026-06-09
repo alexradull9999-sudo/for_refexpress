@@ -15,13 +15,13 @@ export default function CallToAction() {
       
       <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
         {/* Decorative Badge */}
-        <div className="w-16 h-16 bg-white/5 border border-white/15 rounded-full flex items-center justify-center mx-auto mb-6 text-brand-orange">
+        <div className="w-16 h-16 bg-white/5 border border-white/15 rounded-full flex items-center justify-center mx-auto mb-6 text-amber-400">
           <ClipboardCheck className="w-8 h-8" />
         </div>
 
         {/* H2 Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-extrabold tracking-tight uppercase leading-tight mb-4">
-          Не уверены, какой контейнер вам <span className="text-brand-orange">лучше подойдет?</span>
+          Не уверены, какой контейнер вам <span className="text-amber-300">лучше подойдет?</span>
         </h2>
 
         {/* Paragraph Description */}
@@ -39,7 +39,7 @@ export default function CallToAction() {
 
         {/* Supporting proof sub-label */}
         <p className="text-xs text-gray-400 mt-4 italic">
-          * Цены действительны на сегодня. Вы ничего не оплачиваете — квиз бесплатный и ни к чему не обязывает.
+          * Цены действительны на сегодня. Вы ничего не оплачиваете — опрос бесплатный и ни к чему не обязывает.
         </p>
       </div>
     </section>
