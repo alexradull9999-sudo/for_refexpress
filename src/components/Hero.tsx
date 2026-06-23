@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowDown, ClipboardList, Shield, Award, MapPin } from "lucide-react";
-import containerImg from "../conteiner.png";
-import containerImg2 from "../container2.png";
+import img20ft from "../20 fut.webp";
+import img40ft from "../40 fut.avif";
 
 export default function Hero() {
   const handleScrollToQuiz = () => {
@@ -126,7 +126,7 @@ export default function Hero() {
               transition={{ delay: 0.6 }}
               className="text-xs text-gray-400 italic font-sans"
             >
-              * Бесплатно — вышлем подборку в мессенджер или на email актуальные цены и фотографии.
+              * Бесплатно — вышлем подборку в мессенджер или на email актуальные характеристики и реальные фотографии контейнеров.
             </motion.p>
           </div>
 
@@ -140,8 +140,8 @@ export default function Hero() {
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 hover:border-amber-300/40 transition duration-300 relative group overflow-hidden shadow-lg">
               <div className="relative h-44 rounded-lg overflow-hidden bg-gray-900">
                 <img 
-                  src={containerImg} 
-                  alt="Сухогрузный контейнер РефЭкспресс" 
+                  src={img20ft} 
+                  alt="Сухогрузный контейнер 20 футов РефЭкспресс" 
                   referrerPolicy="no-referrer"
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100"
@@ -168,8 +168,8 @@ export default function Hero() {
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 hover:border-amber-300/40 transition duration-300 relative group overflow-hidden shadow-lg">
               <div className="relative h-44 rounded-lg overflow-hidden bg-gray-900">
                 <img 
-                  src={containerImg2} 
-                  alt="Сухогрузный контейнер 40 HC РефЭкспресс" 
+                  src={img40ft} 
+                  alt="Сухогрузный контейнер 40 футов РефЭкспресс" 
                   referrerPolicy="no-referrer"
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100"
@@ -179,12 +179,12 @@ export default function Hero() {
                   Под заказ и в наличии
                 </div>
                 <div className="absolute bottom-2 right-2 bg-brand-blue text-white font-mono text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">
-                  40 HC • Увеличенный (76 м³)
+                  40 футов • Увеличенный (76 м³)
                 </div>
               </div>
               <div className="mt-2.5 flex justify-between items-center px-1">
                 <span className="font-display font-bold text-xs uppercase text-white">
-                  Сухогрузный контейнер 40 HC (Новый)
+                  Сухогрузный контейнер 40 футов (Новый)
                 </span>
                 <span className="text-amber-300 font-bold text-xs font-mono">
                   Сертификат РС

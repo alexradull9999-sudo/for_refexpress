@@ -15,54 +15,54 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-brand-blue-hover text-gray-400 py-12 border-t border-white/5 relative z-20">
+    <footer className="bg-[#f8fafc] text-brand-grey py-14 border-t border-slate-200 relative z-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8">
           
           {/* Brand/Logo Area */}
           <div className="md:col-span-5 flex flex-col justify-between">
             <div>
-              <div className="inline-block mb-3">
+              <div className="inline-block mb-3.5">
                 <Logo size="lg" />
               </div>
-              <p className="text-xs text-gray-400 max-w-sm mb-4 leading-relaxed font-sans">
-                Продажа, аренда и обслуживание рефрижераторных и универсальных сухогрузных контейнеров 20 и 40 футов. Прямые поставки от производителей с 2012 года.
+              <p className="text-xs text-brand-grey max-w-sm mb-4 leading-relaxed font-sans">
+                Продажа, аренда и обслуживание рефрижераторных и универсальных сухогрузных контейнеров 20 и 40 футов. Прямые поставки от производителей с 2012 года (более 13 лет опыта).
               </p>
             </div>
             
-            <div className="text-xs text-brand-grey font-mono leading-none">
-              Юридическое лицо: ООО «Р.Э.С.»<br />
+            <div className="text-xs text-brand-grey/85 font-mono leading-relaxed bg-white p-3 rounded-xl border border-slate-200/60 shadow-2xs">
+              <strong>Юридическое лицо:</strong> ООО «Р.Э.С.»<br />
               ИНН: 7810398453 • КПП: 781001001 • ОГРН: 1157847425129
             </div>
           </div>
 
           {/* Contacts info Grid block */}
-          <div className="md:col-span-4 space-y-4">
-            <h4 className="font-display font-semibold text-xs uppercase tracking-widest text-white">
+          <div className="md:col-span-4 space-y-4.5">
+            <h4 className="font-display font-bold text-xs uppercase tracking-widest text-brand-blue">
               Контактные данные
             </h4>
             
-            <div className="space-y-3 text-sm">
+            <div className="space-y-3.5 text-sm">
               <a
                 href="tel:+78124253674"
                 onClick={handlePhoneClick}
-                className="flex items-center gap-2.5 hover:text-white transition duration-200"
+                className="flex items-center gap-2.5 hover:opacity-85 transition duration-200"
               >
-                <Phone className="w-4 h-4 text-brand-orange shrink-0" />
-                <span className="font-mono font-bold text-white">+7 (812) 425-36-74</span>
+                <Phone className="w-4.5 h-4.5 text-brand-orange shrink-0" />
+                <span className="font-mono font-black text-brand-blue text-base hover:text-brand-orange transition">+7 (812) 425-36-74</span>
               </a>
 
               <a
                 href="mailto:sales@refexpress.ru"
-                className="flex items-center gap-2.5 hover:text-white transition duration-200"
+                className="flex items-center gap-2.5 text-brand-grey hover:text-brand-blue transition duration-200"
               >
-                <Mail className="w-4 h-4 text-brand-orange shrink-0" />
-                <span className="font-mono text-gray-300">sales@refexpress.ru</span>
+                <Mail className="w-4.5 h-4.5 text-brand-orange shrink-0" />
+                <span className="font-mono text-xs font-semibold">sales@refexpress.ru</span>
               </a>
 
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-brand-orange shrink-0 mt-0.5" />
-                <span className="text-xs leading-relaxed text-gray-300">
+              <div className="flex items-start gap-2.5 text-brand-grey text-xs leading-relaxed">
+                <MapPin className="w-4.5 h-4.5 text-brand-orange shrink-0 mt-0.5" />
+                <span>
                   Санкт-Петербург, ул. Новорощинская, д.4, бизнес-центр «Собрание», офис 1114-2
                 </span>
               </div>
@@ -70,8 +70,8 @@ export default function Footer() {
           </div>
 
           {/* Instant messengers & Social badges */}
-          <div className="md:col-span-3 space-y-4">
-            <h4 className="font-display font-semibold text-xs uppercase tracking-widest text-white">
+          <div className="md:col-span-3 space-y-4.5">
+            <h4 className="font-display font-bold text-xs uppercase tracking-widest text-brand-blue">
               Мессенджеры
             </h4>
             
@@ -82,7 +82,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleSocialClick}
-                className="w-10 h-10 rounded-full bg-sky-500 hover:bg-sky-600 flex items-center justify-center text-white transition-all hover:scale-110"
+                className="w-10 h-10 rounded-full bg-sky-500 hover:bg-sky-600 flex items-center justify-center text-white transition-all hover:scale-110 shadow-sm"
                 title="Telegram Bot"
               >
                 <svg className="w-4.5 h-4.5 text-white fill-current" viewBox="0 0 24 24">
@@ -96,7 +96,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleSocialClick}
-                className="w-10 h-10 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center text-white transition-all hover:scale-110 shrink-0"
+                className="w-10 h-10 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center text-white transition-all hover:scale-110 shrink-0 shadow-sm"
                 title="WhatsApp — Написать Максу"
               >
                 <svg className="w-5 h-5 text-white fill-current" viewBox="0 0 24 24">
@@ -123,15 +123,15 @@ export default function Footer() {
         </div>
 
         {/* Separator and Bottom bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
-          <p>
+        <div className="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-grey gap-4">
+          <p className="text-brand-grey/85">
             © 2012–2026 ООО «Р.Э.С.». Все права защищены. Сайт является собственностью компании.
           </p>
           
           <div className="flex items-center gap-4">
             <button
               onClick={() => setIsPrivacyOpen(true)}
-              className="hover:text-white underline cursor-pointer select-none text-[11px] flex items-center gap-1"
+              className="hover:text-brand-blue underline cursor-pointer select-none text-[11px] flex items-center gap-1 text-brand-grey"
             >
               <Shield className="w-3.5 h-3.5 text-brand-orange" />
               <span>Политика конфиденциальности</span>

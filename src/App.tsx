@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import SocialProof from "./components/SocialProof";
 import WhyUs from "./components/WhyUs";
+import Catalog from "./components/Catalog";
 import Quiz from "./components/Quiz";
 import HowWeWork from "./components/HowWeWork";
 import Stats from "./components/Stats";
@@ -28,6 +29,9 @@ export default function App() {
 
         {/* 4. WHY US (ADVANTAGES) */}
         <WhyUs />
+
+        {/* 4.5. CONTAINER CATALOG & PRICES */}
+        <Catalog />
 
         {/* 5. MULTI-STEP QUIZ SECTION */}
         <Quiz />

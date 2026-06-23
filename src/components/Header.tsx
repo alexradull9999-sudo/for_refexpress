@@ -38,7 +38,7 @@ export default function Header() {
         <div className="flex flex-col py-1 pl-1 md:pl-2.5">
           <Logo size="md" className="mb-0.5" />
           <span className="text-[9px] md:text-[10px] text-brand-grey font-sans tracking-wide mt-1 uppercase font-semibold">
-            ООО «Р.Э.С.» • Доставка контейнеров с 2012 г.
+            ООО «Р.Э.С.» • Поставка контейнеров с 2012 г.
           </span>
         </div>
 

@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { STATS_ITEMS } from "../data";
 
 export default function Stats() {
-  const [counts, setCounts] = useState<number[]>([0, 0, 0, 0]);
+  const [counts, setCounts] = useState<number[]>(() => STATS_ITEMS.map(() => 0));
   const sectionRef = useRef<HTMLDivElement>(null);
   const animatedRef = useRef<boolean>(false);
 
@@ -90,7 +90,7 @@ export default function Stats() {
             >
               {/* Animated value text */}
               <div className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-amber-400 mb-3 leading-none flex items-center justify-center">
-                <span>{counts[index]}</span>
+                <span>{counts[index] !== undefined ? counts[index] : 0}</span>
                 <span className="text-2xl sm:text-3xl md:text-4xl text-white select-none whitespace-pre">
                   {item.suffix}
                 </span>

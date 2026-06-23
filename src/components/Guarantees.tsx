@@ -1,5 +1,5 @@
 import { GUARANTEES_ITEMS } from "../data";
-import { ShieldCheck, Image, CircleDollarSign } from "lucide-react";
+import { ShieldCheck, Image, ClipboardCheck } from "lucide-react";
 
 export default function Guarantees() {
   const selectIcon = (iconName: string) => {
@@ -8,8 +8,8 @@ export default function Guarantees() {
         return <ShieldCheck className="w-8 h-8 text-brand-orange" />;
       case "Image":
         return <Image className="w-8 h-8 text-brand-orange" />;
-      case "CircleDollarSign":
-        return <CircleDollarSign className="w-8 h-8 text-brand-orange" />;
+      case "ClipboardCheck":
+        return <ClipboardCheck className="w-8 h-8 text-brand-orange" />;
       default:
         return <ShieldCheck className="w-8 h-8 text-brand-orange" />;
     }
