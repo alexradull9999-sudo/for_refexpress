@@ -2,53 +2,68 @@ import React from "react";
 
 interface PartnerCompany {
   name: string;
-  sub: string;
   logo: React.ReactNode;
 }
 
 const PARTNERS_LIST: PartnerCompany[] = [
   {
     name: "Газпром",
-    sub: "ПАО",
     logo: (
-      <svg className="w-5 h-5 text-sky-400 shrink-0 fill-current" viewBox="0 0 24 24">
-        <path d="M12 2c.11 2.34-1.2 4.47-3 5.5C7.2 8.53 6 10.38 6 12.5c0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-1.78-.71-3.41-1.88-4.59-.2-.2-.51-.12-.6.14-.52 1.54-1.97 2.37-3.49 1.95-1.12-.31-1.92-1.32-2.03-2.48l-.06-.52V2z" />
+      <svg className="h-8 w-auto text-white/30 group-hover:text-[#3B90F4] transition-all duration-300 shrink-0" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 28C6 26 4 21 5 16C5.5 12 8 8 13 4C14 7 13 10 11 12C9 14 8 16 8 18C8 22 11 25 14 25C17.5 25 20.5 22 19 18C18.5 16.5 17 15.5 17 14C17 12 18 10.5 19 10C19.5 12.5 21 14 21.5 16C22 18 22 20 21 21.5C20.5 22.5 19 23 18.5 24C20 25.5 23 25 25 21C26.5 18 25.5 14.5 24.5 12C23.5 10 24 8 24.5 7C25.5 9 27.5 10.5 28.5 13C29.5 16 29 19.5 28 21.5C25.5 26.5 19 29.5 12 28Z" fill="currentColor" />
+        <text x="36" y="25" fontFamily="Inter, sans-serif" fontWeight="900" fontSize="15.5" letterSpacing="0.08em" fill="currentColor">ГАЗПРОМ</text>
       </svg>
     )
   },
   {
     name: "АЛРОСА",
-    sub: "АК",
     logo: (
-      <svg className="w-5 h-5 text-blue-400 shrink-0 fill-current" viewBox="0 0 24 24">
-        <path d="M12 2L2 9l10 13 10-13L12 2zm-8.2 6.6L12 3.5l8.2 5.1L12 20.2 3.8 8.6z" />
+      <svg className="h-8 w-auto text-white/30 group-hover:text-[#00AEEF] transition-all duration-300 shrink-0" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M16 6 L26 18 L16 30 L6 18 Z" fill="none" strokeWidth="2" />
+          <path d="M6 18 H26 M16 6 V30" strokeWidth="1" strokeDasharray="3,3" />
+          <polygon points="16,13 19,18 16,23 13,18" fill="currentColor" opacity="0.8" />
+        </g>
+        <text x="36" y="25" fontFamily="Inter, sans-serif" fontWeight="900" fontSize="15" letterSpacing="0.1em" fill="currentColor">АЛРОСА</text>
       </svg>
     )
   },
   {
     name: "Kinross",
-    sub: "Gold Corp",
     logo: (
-      <svg className="w-5 h-5 text-amber-400 shrink-0 fill-current" viewBox="0 0 24 24">
-        <path d="M2 19h20v2H2v-2zm3-4l3-9 4 5 4-5 3 9H5z" />
+      <svg className="h-8 w-auto text-white/30 group-hover:text-[#E5A93B] transition-all duration-300 shrink-0" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M5 26 L8 10 L14 18 L20 8 L26 18 L32 10 L35 26 Z" fill="none" />
+          <line x1="3" y1="28" x2="37" y2="28" />
+        </g>
+        <text x="44" y="20" fontFamily="Inter, sans-serif" fontWeight="800" fontSize="11" letterSpacing="0.14em" fill="currentColor">KINROSS</text>
+        <text x="44" y="28" fontFamily="Inter, sans-serif" fontWeight="600" fontSize="5.5" letterSpacing="0.25em" fill="currentColor" opacity="0.8">GOLD CORP</text>
       </svg>
     )
   },
   {
     name: "Evergreen",
-    sub: "Marine",
     logo: (
-      <svg className="w-5 h-5 text-emerald-400 shrink-0 fill-current" viewBox="0 0 24 24">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H11V8h2c.55 0 1-.45 1-1V5h1.5c.78 0 1.49-.44 1.83-1.14C18.7 5.76 20 8.73 20 12c0 2.2-.62 4.25-1.1 5.39z" />
+      <svg className="h-8 w-auto text-white/30 group-hover:text-[#00A163] transition-all duration-300 shrink-0" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="18" cy="19" r="10" fill="none" />
+          <path d="M8 19 H28 M18 9 V29 M10 13 A10 10 0 0 0 10 25 M26 13 A10 10 0 0 1 26 25" strokeWidth="1" />
+        </g>
+        <text x="36" y="24" fontFamily="Inter, sans-serif" fontWeight="900" fontSize="11.5" letterSpacing="0.08em" fill="currentColor">EVERGREEN</text>
       </svg>
     )
   },
   {
     name: "КМП",
-    sub: "Камчатское Пароходство",
     logo: (
-      <svg className="w-5 h-5 text-indigo-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3M12 2a3 3 0 110 6 3 3 0 010-6z" />
+      <svg className="h-8 w-auto text-white/30 group-hover:text-[#4A90E2] transition-all duration-300 shrink-0" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="17" cy="19" r="10" fill="none" />
+          <path d="M17 13 V25 M13 17 H21 M11 20.5 C11 23.5 23 23.5 23 20.5" strokeWidth="1.6" />
+          <circle cx="17" cy="11.5" r="1.5" fill="currentColor" />
+        </g>
+        <text x="34" y="20.5" fontFamily="Inter, sans-serif" fontWeight="900" fontSize="13" letterSpacing="0.08em" fill="currentColor">КМП</text>
+        <text x="34" y="28.5" fontFamily="Inter, sans-serif" fontWeight="600" fontSize="5.5" letterSpacing="0.08em" fill="currentColor" opacity="0.8">КАМЧАТСКОЕ ПАРОХОДСТВО</text>
       </svg>
     )
   }
@@ -56,9 +71,9 @@ const PARTNERS_LIST: PartnerCompany[] = [
 
 export default function SocialProof() {
   return (
-    <section className="bg-brand-blue-hover border-y border-white/5 py-6 text-white overflow-hidden">
+    <section className="bg-brand-blue-hover border-y border-white/5 py-8 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           
           {/* Label */}
           <div className="text-center lg:text-left shrink-0">
@@ -70,20 +85,14 @@ export default function SocialProof() {
             </p>
           </div>
 
-          {/* Logos Row */}
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-3.5 max-w-3xl">
+          {/* Logos Row with subtle transparent capsules */}
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-5 max-w-4xl">
             {PARTNERS_LIST.map((partner) => (
               <div 
                 key={partner.name}
-                className="font-sans text-xs text-gray-200 bg-white/5 px-3.5 py-2 rounded-lg border border-white/10 hover:border-brand-orange/40 hover:bg-white-[8%] transition-all select-none flex items-center gap-2.5 group shadow-xs"
+                className="group flex items-center justify-center transition-all duration-300 transform hover:scale-[1.05] cursor-pointer"
               >
-                <div className="bg-white/5 p-1 rounded-md group-hover:scale-110 transition-transform duration-200 shrink-0">
-                  {partner.logo}
-                </div>
-                <div className="flex flex-col leading-none">
-                  <span className="font-display font-extrabold text-sm sm:text-base tracking-tight text-white">{partner.name}</span>
-                  <span className="text-[9px] text-gray-400 font-mono mt-0.5 uppercase tracking-wider">{partner.sub}</span>
-                </div>
+                {partner.logo}
               </div>
             ))}
           </div>
