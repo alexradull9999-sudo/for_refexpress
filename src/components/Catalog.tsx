@@ -20,6 +20,9 @@ import img20re_4 from "../IMG_3666.JPG";
 import img40re_1 from "../img40re_1.jpg";
 import img40re_2 from "../img40re_2.jpg";
 
+// Real 40ft HC dry container photo uploaded by the user
+import img40hc_real from "../img40hc_real.webp";
+
 // Inline SVG CIMC logo implementation
 export function CimcLogo({ className = "h-8" }: { className?: string }) {
   return (
@@ -81,7 +84,7 @@ const CONTAINERS_DATA: ContainerItem[] = [
     type: "dry",
     name: 'Сухогрузный контейнер 40\' HC',
     alias: "40-футовый High Cube — увеличенный по высоте (76.2 м³)",
-    image: img40ft2,
+    image: img40hc_real,
     volume: "76.2 м³",
     payload: "До 28 800 кг",
     extDimensions: "12.19 х 2.43 х 2.89 м",
@@ -259,13 +262,7 @@ function ContainerCard({
           {container.type === "dry" ? "Сухогрузный" : "Рефрижератор"}
         </div>
 
-        {/* Real warehouse photos indicator */}
-        {images.length > 1 && (
-          <div className="absolute top-3 right-3 bg-brand-orange/95 backdrop-blur-xs text-white font-display font-bold text-[10px] uppercase tracking-wider px-2 py-1 rounded shadow-xs flex items-center gap-1.5 z-10 animate-pulse">
-            <span className="w-1.5 h-1.5 rounded-full bg-white" />
-            <span>Реальные фото со склада</span>
-          </div>
-        )}
+
 
         <div className="absolute bottom-3 right-3 bg-brand-dark/85 backdrop-blur-xs text-amber-300 font-mono text-xs font-bold px-2.5 py-1 rounded z-10">
           Объём: {container.volume}
