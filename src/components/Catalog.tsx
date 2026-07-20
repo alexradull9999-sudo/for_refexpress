@@ -23,6 +23,9 @@ import img40re_2 from "../img40re_2.jpg";
 // Real 40ft HC dry container photo uploaded by the user
 import img40hc_real from "../img40hc_real.webp";
 
+// Real 20ft HC dry container photo uploaded by the user
+import img20hc_real from "../img20hc_real.webp";
+
 // Inline SVG CIMC logo implementation
 export function CimcLogo({ className = "h-8" }: { className?: string }) {
   return (
@@ -71,7 +74,7 @@ const CONTAINERS_DATA: ContainerItem[] = [
     type: "dry",
     name: 'Сухогрузный контейнер 20\' HC',
     alias: "20-футовый High Cube — увеличенный по высоте (37.5 м³)",
-    image: img40ft3,
+    image: img20hc_real,
     volume: "37.5 м³",
     payload: "До 28 360 кг",
     extDimensions: "6.05 х 2.43 х 2.89 м",
