@@ -53,11 +53,11 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:sales@refexpress.ru"
+                href="mailto:krksales@refexpress.ru"
                 className="flex items-center gap-2.5 text-brand-grey hover:text-brand-blue transition duration-200"
               >
                 <Mail className="w-4.5 h-4.5 text-brand-orange shrink-0" />
-                <span className="font-mono text-xs font-semibold">sales@refexpress.ru</span>
+                <span className="font-mono text-xs font-semibold">krksales@refexpress.ru</span>
               </a>
 
               <div className="flex items-start gap-2.5 text-brand-grey text-xs leading-relaxed">
@@ -178,7 +178,7 @@ export default function Footer() {
                 3. Согласие на обработку данных
               </h4>
               <p>
-                Оставляя заявку на настоящем ресурсе или отвечая на вопросы интерактивного опроса, вы подтверждаете свое добровольное согласие на обработку персональных данных. Вы можете отозвать согласие в любое время, обратившись на наш адрес электронной почты: sales@refexpress.ru.
+                Оставляя заявку на настоящем ресурсе или отвечая на вопросы интерактивного опроса, вы подтверждаете свое добровольное согласие на обработку персональных данных. Вы можете отозвать согласие в любое время, обратившись на наш адрес электронной почты: krksales@refexpress.ru.
               </p>
 
               <h4 className="font-display font-bold text-brand-blue mb-1">
