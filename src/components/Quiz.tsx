@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { QUIZ_QUESTIONS } from "../data";
 import { QuizAnswers, LeadFormValues } from "../types";
 import { trackGoal, getUtmParams } from "../utils/analytics";
+import { submitToAmoCrm } from "../utils/amocrm";
 import { Check, ArrowRight, ArrowLeft } from "lucide-react";
 
 export default function Quiz() {
@@ -125,22 +126,40 @@ export default function Quiz() {
     return Object.keys(errors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     setIsSubmitting(true);
 
-    // Simulated API call (Webhook / CRM transmission)
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      trackGoal("quiz_submit", {
-        answers,
-        form: formValues,
+    // 1. Submit lead to amoCRM (https://forms.amocrm.ru/rztmmvv)
+    try {
+      await submitToAmoCrm({
+        name: formValues.name,
+        phone: formValues.phone,
+        email: formValues.email,
+        contactMethod: formValues.contactMethod,
+        answers: answers as Record<string, string>,
         utm: utmTags
       });
-    }, 1200);
+    } catch (err) {
+      console.error("Error submitting to amoCRM:", err);
+    }
+
+    // 2. Track reachGoal "submit" in Yandex Metrika (ID: 112146503)
+    trackGoal("submit", {
+      answers,
+      form: formValues,
+      utm: utmTags
+    });
+    trackGoal("quiz_submit", {
+      answers,
+      form: formValues,
+      utm: utmTags
+    });
+
+    setIsSubmitting(false);
+    setIsSubmitted(true);
   };
 
   const isCurrentStepAnswered = () => {

@@ -1,6 +1,8 @@
 /**
  * Utility for tracking Yandex Metrika goals
  */
+export const METRIKA_COUNTER_ID = 112146503;
+
 export const trackGoal = (goalName: string, data?: any) => {
   // 1. Console Log with styled styling
   console.log(
@@ -10,28 +12,27 @@ export const trackGoal = (goalName: string, data?: any) => {
     data || ""
   );
 
-  // 2. Standard Yandex Metrika call if present (as requested in specifications)
-  if (typeof (window as any).ym === "function") {
-    try {
-      // Typically `ym(XXXXXX, 'reachGoal', targetName, params)`
-      // We search for any initialized metrika counter or default
-      const metrikaId = (window as any)._ym_counter_id;
-      if (metrikaId) {
-        (window as any).ym(metrikaId, "reachGoal", goalName, data);
-      } else {
-        // Fallback if metrika counter is not saved but window.ym exists
-        console.warn("Yandex Metrika: counter ID is not defined, called fallback ym()");
+  // 2. Standard Yandex Metrika call
+  if (typeof window !== "undefined") {
+    const ymFunc = (window as any).ym;
+    const metrikaId = (window as any)._ym_counter_id || METRIKA_COUNTER_ID;
+
+    if (typeof ymFunc === "function") {
+      try {
+        ymFunc(metrikaId, "reachGoal", goalName, data);
+      } catch (err) {
+        console.error(`Failed to trigger ym reachGoal "${goalName}":`, err);
       }
-    } catch (err) {
-      console.error("Failed to execute standard Yandex Metrika ym()", err);
     }
   }
 
   // 3. Dispatch brief custom event for our visual Toast notifications
-  const event = new CustomEvent("metrika_goal_triggered", {
-    detail: { goalName, timestamp: new Date().toLocaleTimeString(), data }
-  });
-  window.dispatchEvent(event);
+  if (typeof window !== "undefined") {
+    const event = new CustomEvent("metrika_goal_triggered", {
+      detail: { goalName, timestamp: new Date().toLocaleTimeString(), data }
+    });
+    window.dispatchEvent(event);
+  }
 };
 
 /**
