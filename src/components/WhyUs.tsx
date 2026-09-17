@@ -28,14 +28,14 @@ export default function WhyUs() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 bg-brand-blue/5 text-brand-blue font-display font-extrabold text-xs uppercase tracking-wider rounded-md mb-3">
-            Наши преимущества
+            Оптовые преимущества
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-extrabold tracking-tight uppercase leading-tight text-brand-blue">
-            Почему <span className="text-brand-orange">1 200+ компаний</span> выбирают нас
+            Почему <span className="text-brand-orange">1 200+ компаний</span> заказывают оптом у нас
           </h2>
           <div className="w-12 h-1 bg-brand-orange mx-auto mt-4 rounded" />
           <p className="text-brand-grey max-w-xl mx-auto text-sm md:text-base mt-4">
-            Мы выстроили бизнес-процессы так, чтобы покупка контейнера была понятной, безопасной и сопровождалась минимумом согласований.
+            Мы выстроили бизнес-процессы так, чтобы оптовая закупка партий контейнеров от 5 единиц была прозрачной, выгодной и сопровождалась полным пакетом закрывающих документов.
           </p>
         </div>
 

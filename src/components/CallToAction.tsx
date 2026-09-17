@@ -21,12 +21,12 @@ export default function CallToAction() {
 
         {/* H2 Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-extrabold tracking-tight uppercase leading-tight mb-4">
-          Не уверены, какой контейнер вам <span className="text-amber-300">лучше подойдет?</span>
+          Нужен точный расчет партии <span className="text-amber-300">от 5 контейнеров?</span>
         </h2>
 
         {/* Paragraph Description */}
         <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-xl mx-auto mb-8 font-sans">
-          Пройдите быстрый интерактивный тест за 1 минуту. Наш специалист сделает точный подбор спецификации оборудования и пришлет персональный каталог с реальными фото.
+          Пройдите быстрый интерактивный опрос за 1 минуту. Наш специалист сделает точный расчет стоимости партии от 5 шт. с доставкой до вашего объекта и пришлет персональный каталог с реальными фото.
         </p>
 
         {/* Large CTA Button */}
@@ -34,12 +34,12 @@ export default function CallToAction() {
           onClick={handleScrollToQuiz}
           className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-brand-orange hover:bg-brand-orange-hover text-white font-display font-extrabold uppercase text-sm md:text-base rounded-md shadow-xl hover:shadow-brand-orange/30 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer select-none"
         >
-          <span>Подобрать контейнер и получить каталог →</span>
+          <span>Рассчитать партию от 5 шт. и получить каталог →</span>
         </button>
 
         {/* Supporting proof sub-label */}
         <p className="text-xs text-gray-400 mt-4 italic">
-          * Вы получите детальную спецификацию и подбор оборудования. Вы ничего не оплачиваете — опрос бесплатный и ни к чему не обязывает.
+          * Вы получите оптовое коммерческое предложение и подбор оборудования. Опрос бесплатный и ни к чему не обязывает.
         </p>
       </div>
     </section>

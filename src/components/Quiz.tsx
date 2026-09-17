@@ -181,13 +181,13 @@ export default function Quiz() {
       <div className="max-w-4xl mx-auto px-4 relative z-10">
         <div className="text-center mb-10">
           <span className="inline-block px-3 py-1 bg-white/10 text-amber-300 border border-amber-300/20 font-display font-extrabold text-xs uppercase tracking-wider rounded-md mb-3">
-            Интерактивный опрос
+            Оптовые поставки от 5 шт. • Интерактивный расчет
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-extrabold tracking-tight mb-4 uppercase">
-            Подберите контейнер за 1 минуту
+            Подберите партию контейнеров от 5 шт. за 1 минуту
           </h2>
           <p className="text-gray-300 max-w-xl mx-auto">
-            Ответьте на 4 простых вопроса, и мы пришлём PDF-каталог с подробными характеристиками, реальными фотографиями и информацией о наличии на терминалах сегодня.
+            Ответьте на 4 простых вопроса, и мы рассчитаем оптовую стоимость партии от 5 единиц с доставкой до вашего терминала и пришлём PDF-каталог с актуальным наличием на складах сегодня.
           </p>
         </div>
 
@@ -322,11 +322,14 @@ export default function Quiz() {
                   /* FINAL STEP - LEAD FORM */
                   <div className="max-w-2xl mx-auto">
                     <div className="mb-5">
+                      <div className="inline-block bg-brand-orange/10 text-brand-orange text-[11px] font-bold uppercase px-2.5 py-0.5 rounded mb-2">
+                        Оптовые поставки от 5 шт.
+                      </div>
                       <h3 className="text-xl md:text-2xl font-display font-extrabold text-brand-blue tracking-tight leading-tight">
-                        Заберите ваш PDF-каталог
+                        Получите оптовый расчет партии и PDF-каталог
                       </h3>
                       <p className="text-xs text-brand-grey mt-1">
-                        Заполните контактную информацию. Никакого телефонного спама — вышлем только запрошенные файлы.
+                        Заполните контактную информацию. Специалист подготовит коммерческое предложение с оптовыми ценами с НДС и вышлет каталог с реальными фото.
                       </p>
                     </div>
 
@@ -436,10 +439,10 @@ export default function Quiz() {
                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                               </svg>
-                              Формирование каталога...
+                              Формирование оптового расчета...
                             </>
                           ) : (
-                            <>Получить каталог бесплатно</>
+                            <>Получить оптовый расчет (от 5 шт.) и каталог</>
                           )}
                         </button>
 
@@ -448,7 +451,7 @@ export default function Quiz() {
                             Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
                           </p>
                           <p className="font-semibold text-brand-blue">
-                            Никакого спама — только каталог и индивидуальный подбор
+                            Поставки от 5 шт. • Без спама • Прямой оптовый прайс CIMC
                           </p>
                         </div>
                       </form>
@@ -468,10 +471,10 @@ export default function Quiz() {
                   <Check className="w-8 h-8" strokeWidth={3} />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-display font-extrabold text-brand-blue mb-4">
-                  Каталог успешно забронирован!
+                  Заявка на оптовый расчет принята!
                 </h3>
                 <p className="text-brand-dark max-w-lg mx-auto text-base md:text-lg mb-8 leading-relaxed">
-                  Мы начали формировать подборку. PDF-каталог с актуальным наличием и комплектациями на сегодня будет выслан на ваш 
+                  Мы формируем коммерческое предложение по оптовой поставке от 5 шт. PDF-каталог с актуальным наличием и расчетом стоимости доставки будет выслан на ваш 
                   <strong className="text-brand-blue"> {formValues.contactMethod}</strong> в течение 10-15 минут.
                 </p>
 

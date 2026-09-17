@@ -7,8 +7,10 @@ export interface UtmParams {
 export interface QuizAnswers {
   containerType: string;
   containerSize: string;
-  containerCondition: string;
+  containerQuantity?: string;
+  containerCondition?: string;
   purchaseTimeline: string;
+  [key: string]: string | undefined;
 }
 
 export interface LeadFormValues {

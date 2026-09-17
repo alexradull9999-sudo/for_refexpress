@@ -25,7 +25,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex justify-between items-center px-2">
           <div className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-orange shrink-0 animate-pulse" />
-            <span>Санкт-Петербург, ул. Новорощинская, д.4, бизнес-центр «Собрание», офис 1114-2</span>
+            <span>Санкт-Петербург, ул. Новорощинская, д.4, БЦ «Собрание», офис 1114-2 • Оптовые поставки от 5 шт.</span>
           </div>
           <div>
             <span>Время работы: Пн–Пт с 9:00 до 18:00</span>
@@ -38,7 +38,7 @@ export default function Header() {
         <div className="flex flex-col py-1 pl-1 md:pl-2.5">
           <Logo size="md" className="mb-0.5" />
           <span className="text-[9px] md:text-[10px] text-brand-grey font-sans tracking-wide mt-1 uppercase font-semibold">
-            ООО «Р.Э.С.» • Поставка контейнеров с 2012 г.
+            ООО «Р.Э.С.» • Оптовые поставки от 5 шт. с 2012 г.
           </span>
         </div>
 

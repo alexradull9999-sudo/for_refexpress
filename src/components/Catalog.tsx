@@ -67,7 +67,7 @@ const CONTAINERS_DATA: ContainerItem[] = [
     extDimensions: "6.05 х 2.43 х 2.59 м",
     intDimensions: "5.89 х 2.35 х 2.39 м",
     features: ["Прочный гофрированный металл", "Герметичные резиновые уплотнители", "Ровный деревянный пол из фанеры"],
-    price: "от 170 000 руб.",
+    price: "от 170 000 руб./шт.",
   },
   {
     id: "20hc",
@@ -80,7 +80,7 @@ const CONTAINERS_DATA: ContainerItem[] = [
     extDimensions: "6.05 х 2.43 х 2.89 м",
     intDimensions: "5.89 х 2.35 х 2.69 м",
     features: ["Увеличенная высота на 30 см", "Проходит под стандартные автопоезда", "Рекомендован для высоких паллет"],
-    price: "от 190 000 руб.",
+    price: "от 190 000 руб./шт.",
   },
   {
     id: "40hc",
@@ -93,7 +93,7 @@ const CONTAINERS_DATA: ContainerItem[] = [
     extDimensions: "12.19 х 2.43 х 2.89 м",
     intDimensions: "12.00 х 2.35 х 2.69 м",
     features: ["Увеличенный объём под высокие паллеты", "Прочный стальной профиль, антикоррозийная защита", "Широкий угол открытия дверей"],
-    price: "от 230 000 руб.",
+    price: "от 230 000 руб./шт.",
   },
   {
     id: "20re",
@@ -107,7 +107,7 @@ const CONTAINERS_DATA: ContainerItem[] = [
     extDimensions: "6.05 х 2.43 х 2.59 м",
     intDimensions: "5.45 х 2.28 х 2.16 м",
     features: ["Диапазон: от -30°C до +25°C", "Стенки из сэндвич-панелей", "Установка Thermo King / Carrier"],
-    price: "По запросу",
+    price: "По запросу (от 5 шт.)",
   },
   {
     id: "40re",
@@ -121,12 +121,12 @@ const CONTAINERS_DATA: ContainerItem[] = [
     extDimensions: "12.19 х 2.43 х 2.89 м",
     intDimensions: "11.60 х 2.28 х 2.42 м",
     features: ["Микропроцессорный контроль температур", "T-образный профильный алюминиевый пол", "Защита от перегрузок сети"],
-    price: "По запросу",
+    price: "По запросу (от 5 шт.)",
   }
 ];
 
 export default function Catalog() {
-  const [activeTab, setActiveTab ] = useState<"all" | "dry" | "reefer">("all");
+  const [activeTab, setActiveTab] = useState<"all" | "dry" | "reefer">("all");
 
   const filteredContainers = CONTAINERS_DATA.filter(
     (c) => activeTab === "all" || c.type === activeTab
@@ -151,23 +151,23 @@ export default function Catalog() {
             </div>
             <div>
               <div className="inline-flex items-center gap-1.5 bg-brand-orange/10 px-2.5 py-0.5 rounded text-[10px] md:text-xs font-bold text-brand-orange uppercase tracking-wide">
-                Официальный дилер
+                Официальный дилер • Опт от 5 шт.
               </div>
               <h4 className="text-sm md:text-base font-display font-bold text-brand-blue uppercase tracking-tight mt-1">
-                Поставки контейнеров от мирового лидера CIMC
+                Прямые оптовые поставки от мирового лидера CIMC
               </h4>
               <p className="text-xs md:text-sm text-brand-grey max-w-xl leading-snug">
-                Мы являемся прямым представителем холдинга CIMC в РФ. Поставляем абсолютно оригинальные новые контейнеры заводского качества с полным комплектом документов, гарантией производителя и сертификатами РС (Российского Морского Регистра Судоходства).
+                Мы являемся прямым представителем холдинга CIMC в РФ. Поставляем новые контейнеры заводского качества партиями от 5 единиц с полным комплектом документов, гарантией производителя и сертификатами РС.
               </p>
             </div>
           </div>
           <div className="flex flex-row md:flex-col items-center md:items-end gap-2 text-right shrink-0">
             <div className="flex items-center gap-1.5 text-xs text-brand-blue font-bold">
               <ShieldCheck className="w-4.5 h-4.5 text-brand-orange" />
-              <span>100% Заводская гарантия</span>
+              <span>Оптовые партии от 5 шт.</span>
             </div>
             <span className="text-[10px] md:text-xs text-brand-grey font-mono block">
-              Прямые договора • Без посредников
+              Прямые контракты • Без посредников
             </span>
           </div>
         </div>
@@ -175,18 +175,18 @@ export default function Catalog() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-extrabold text-brand-blue uppercase tracking-tight">
-            Каталог сертифицированных контейнеров
+            Оптовый каталог контейнеров: поставки от 5 штук
           </h2>
           <div className="w-16 h-1 bg-brand-orange mx-auto mt-4 mb-3 rounded" />
           <p className="text-brand-grey text-sm md:text-base">
-            Выберите необходимый тип оборудования. Ниже представлены реальные габариты, характеристики и ключевые особенности поставляемых моделей.
+            Поставки осуществляются партиями от 5 единиц со складов в 10+ городах РФ или напрямую с завода CIMC. Ниже представлены габариты, характеристики и оптовые ориентиры цен.
           </p>
         </div>
 
         {/* Categories Tab Navigation */}
         <div className="flex flex-wrap justify-center gap-2 mb-10 select-none">
           {[
-            { id: "all", label: "Все контейнеры" },
+            { id: "all", label: "Все контейнеры (от 5 шт.)" },
             { id: "dry", label: "Сухогрузные (Универсальные)" },
             { id: "reefer", label: "Рефрижераторные (С охлаждением)" },
           ].map((tab) => (
@@ -217,10 +217,10 @@ export default function Catalog() {
         </div>
 
         {/* Notice */}
-        <div className="mt-12 max-w-2xl mx-auto text-center flex items-center justify-center gap-2 bg-brand-light p-4 rounded-xl border border-gray-100 text-xs text-brand-grey leading-relaxed">
+        <div className="mt-12 max-w-3xl mx-auto text-center flex items-center justify-center gap-3 bg-brand-light p-4.5 rounded-xl border border-gray-100 text-xs text-brand-grey leading-relaxed">
           <Info className="w-5 h-5 text-brand-orange shrink-0" />
           <span>
-            * Все поставляемые контейнеры являются абсолютно новыми и сертифицированы по международным стандартам. Наличие на терминалах в РФ и подбор подходящих вариантов можно уточнить в интерактивном калькуляторе ниже.
+            * <strong>Минимальный объём поставки — от 5 единиц.</strong> Все поставляемые контейнеры являются абсолютно новыми и сертифицированы по стандартам ISO и РС. Для партий от 10, 20 и 50 шт. действуют специальные оптовые скидки на оборудование и доставку.
           </span>
         </div>
 
@@ -265,7 +265,9 @@ function ContainerCard({
           {container.type === "dry" ? "Сухогрузный" : "Рефрижератор"}
         </div>
 
-
+        <div className="absolute top-3 right-3 bg-amber-300 text-brand-blue font-display font-extrabold text-[10px] uppercase tracking-wider px-2 py-0.5 rounded shadow-xs z-10">
+          Опт от 5 шт.
+        </div>
 
         <div className="absolute bottom-3 right-3 bg-brand-dark/85 backdrop-blur-xs text-amber-300 font-mono text-xs font-bold px-2.5 py-1 rounded z-10">
           Объём: {container.volume}
@@ -312,7 +314,7 @@ function ContainerCard({
               <span className="text-xs font-semibold text-brand-grey uppercase tracking-wider">Цена:</span>
               <div className="text-right">
                 <span className="text-lg font-display font-extrabold text-brand-orange block leading-none">{container.price}</span>
-                <span className="text-[10px] text-brand-grey block mt-1 font-sans">{container.price === "По запросу" ? "Подробности у менеджера" : "в т.ч. НДС 22%"}</span>
+                <span className="text-[10px] text-brand-grey block mt-1 font-sans">{container.price.includes("По запросу") ? "Расчет партии от 5 шт." : "от 5 шт. • с НДС 22%"}</span>
               </div>
             </div>
           )}
@@ -352,7 +354,7 @@ function ContainerCard({
               В наличии на терминалах
             </span>
             <span className="text-[11px] text-brand-grey font-sans">
-              Новые контейнеры с заводской гарантией CIMC
+              Новые контейнеры CIMC • Партии от 5 единиц
             </span>
           </div>
 
@@ -360,7 +362,7 @@ function ContainerCard({
             onClick={handleScrollToQuiz}
             className="w-full py-2.5 bg-brand-blue hover:bg-brand-blue-hover text-white font-display font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-1.5 cursor-pointer"
           >
-            <span>Рассчитать стоимость доставки</span>
+            <span>Рассчитать партию от 5 шт.</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>

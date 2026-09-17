@@ -25,14 +25,17 @@ export default function Footer() {
               <div className="inline-block mb-3.5">
                 <Logo size="lg" />
               </div>
+              <div className="inline-block bg-brand-orange/10 text-brand-orange text-[10px] font-bold uppercase px-2 py-0.5 rounded mb-2">
+                Оптовые поставки от 5 шт.
+              </div>
               <p className="text-xs text-brand-grey max-w-sm mb-4 leading-relaxed font-sans">
-                Продажа, аренда и обслуживание рефрижераторных и универсальных сухогрузных контейнеров 20 и 40 футов. Прямые поставки от производителей с 2012 года (более 13 лет опыта).
+                Оптовые поставки, продажа и обслуживание новых рефрижераторных и сухогрузных контейнеров 20 и 40 футов партиями от 5 штук. Официальный дилер CIMC в РФ с 2012 года.
               </p>
             </div>
             
             <div className="text-xs text-brand-grey/85 font-mono leading-relaxed bg-white p-3 rounded-xl border border-slate-200/60 shadow-2xs">
               <strong>Юридическое лицо:</strong> ООО «Р.Э.С.»<br />
-              ИНН: 7810398453 • КПП: 781001001 • ОГРН: 1157847425129
+              ИНН: 7810398453 • КПП: 781001001 • ОГРН: 1157847425129 • Мин. заказ: от 5 шт.
             </div>
           </div>
 

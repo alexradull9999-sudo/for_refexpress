@@ -45,7 +45,7 @@ export default function Hero() {
               className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-amber-300 text-xs font-display font-extrabold uppercase tracking-wide mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-amber-300 animate-pulse" />
-              Склады в 10+ городах РФ • Официальный импортер
+              Склады в 10+ городах РФ • Оптовые поставки от 5 шт. • Официальный импортер
             </motion.div>
 
             {/* H1 Main Title */}
@@ -55,7 +55,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold tracking-tight leading-tight uppercase mb-6"
             >
-              Универсальные контейнеры <span className="text-amber-300">20 и 40 футов</span> напрямую от производителя с доставкой по ВСЕЙ России
+              Оптовые поставки контейнеров <span className="text-amber-300">20 и 40 футов от 5 шт.</span> напрямую от производителя
             </motion.h1>
 
             {/* Subtitle */}
@@ -65,8 +65,8 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mb-8 font-sans"
             >
-              Новые сертифицированные сухогрузные контейнеры в наличии на терминалах в крупнейших транспортных узлах. 
-              Предоставляем полный пакет документов и сертификаты соответствия. Оперативная доставка в любой регион России собственной транспортной компанией.
+              Новые сертифицированные сухогрузные и рефконтейнеры оптом от 5 единиц. Прямые поставки с завода CIMC и терминалов в крупнейших транспортных узлах. 
+              Предоставляем полный пакет документов с НДС 22%, сертификаты соответствия РС и быструю доставку партий по всей России.
             </motion.p>
 
             {/* UTP-badges */}
@@ -79,7 +79,7 @@ export default function Hero() {
               <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10 hover:border-amber-300/30 transition duration-300">
                 <Award className="w-7 h-7 text-amber-400 shrink-0" />
                 <div className="leading-tight">
-                  <span className="block font-display font-extrabold text-amber-300 uppercase text-xs">12 лет</span>
+                  <span className="block font-display font-extrabold text-amber-300 uppercase text-xs">13 лет</span>
                   <span className="text-xs text-gray-300">опыта на рынке РФ</span>
                 </div>
               </div>
@@ -87,8 +87,8 @@ export default function Hero() {
               <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/10 hover:border-amber-300/30 transition duration-300">
                 <ClipboardList className="w-7 h-7 text-amber-400 shrink-0" />
                 <div className="leading-tight">
-                  <span className="block font-display font-extrabold text-amber-300 uppercase text-xs">1200+ шт</span>
-                  <span className="text-xs text-gray-300">в обороте ежегодно</span>
+                  <span className="block font-display font-extrabold text-amber-300 uppercase text-xs">От 5 шт.</span>
+                  <span className="text-xs text-gray-300">минимальная партия</span>
                 </div>
               </div>
 
@@ -96,7 +96,7 @@ export default function Hero() {
                 <MapPin className="w-7 h-7 text-amber-400 shrink-0" />
                 <div className="leading-tight">
                   <span className="block font-display font-extrabold text-amber-300 uppercase text-xs">Вся Россия</span>
-                  <span className="text-xs text-gray-300">транспортировка ТК</span>
+                  <span className="text-xs text-gray-300">доставка партий ТК</span>
                 </div>
               </div>
             </motion.div>
@@ -112,11 +112,11 @@ export default function Hero() {
                 onClick={handleScrollToQuiz}
                 className="px-8 py-4 bg-brand-orange hover:bg-brand-orange-hover text-white font-display font-extrabold text-sm uppercase rounded-md shadow-xl hover:shadow-brand-orange/20 cursor-pointer transition-all hover:translate-y-[-1px] active:translate-y-0 text-center flex items-center justify-center gap-2 select-none"
               >
-                <span>Подобрать контейнер и получить каталог →</span>
+                <span>Рассчитать партию от 5 шт. и получить каталог →</span>
               </button>
               <div className="flex flex-col leading-tight">
-                <span className="text-xs text-gray-200 font-bold">1200+ компаний уже скачали</span>
-                <span className="text-[11px] text-gray-400 font-sans">PDF-каталог отправляется за 15 минут</span>
+                <span className="text-xs text-gray-200 font-bold">Оптовые цены с НДС</span>
+                <span className="text-[11px] text-gray-400 font-sans">Расчет логистики партии за 15 минут</span>
               </div>
             </motion.div>
 
@@ -126,7 +126,7 @@ export default function Hero() {
               transition={{ delay: 0.6 }}
               className="text-xs text-gray-400 italic font-sans"
             >
-              * Бесплатно — вышлем подборку в мессенджер или на email актуальные характеристики и реальные фотографии контейнеров.
+              * Поставки осуществляются партиями от 5 штук. Вышлем оптовый каталог с реальными фото и остатками на терминалах.
             </motion.p>
           </div>
 
@@ -148,7 +148,7 @@ export default function Hero() {
                 />
                 {/* Visual Badges overlay */}
                 <div className="absolute top-2 left-2 bg-white text-brand-blue font-display font-extrabold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide shadow-sm">
-                  В наличии на терминалах
+                  Опт от 5 шт. • В наличии
                 </div>
                 <div className="absolute bottom-2 right-2 bg-brand-blue text-white font-mono text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">
                   20 футов • Стандарт (33 м³)
@@ -156,7 +156,7 @@ export default function Hero() {
               </div>
               <div className="mt-2.5 flex justify-between items-center px-1">
                 <span className="font-display font-bold text-xs uppercase text-white">
-                  Сухогрузный контейнер 20 фт (Новый)
+                  Сухогрузный контейнер 20 фт (от 5 шт.)
                 </span>
                 <span className="text-amber-300 font-bold text-xs font-mono">
                   Заводское качество
@@ -176,7 +176,7 @@ export default function Hero() {
                 />
                 {/* Visual Badges overlay */}
                 <div className="absolute top-2 left-2 bg-white text-brand-blue font-display font-extrabold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide shadow-sm">
-                  Под заказ и в наличии
+                  Опт от 5 шт. • Под заказ и в наличии
                 </div>
                 <div className="absolute bottom-2 right-2 bg-brand-blue text-white font-mono text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">
                   40 футов • Увеличенный (76 м³)
@@ -184,7 +184,7 @@ export default function Hero() {
               </div>
               <div className="mt-2.5 flex justify-between items-center px-1">
                 <span className="font-display font-bold text-xs uppercase text-white">
-                  Сухогрузный контейнер 40 футов (Новый)
+                  Сухогрузный контейнер 40 футов (от 5 шт.)
                 </span>
                 <span className="text-amber-300 font-bold text-xs font-mono">
                   Сертификат РС

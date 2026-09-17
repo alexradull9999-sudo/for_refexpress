@@ -16,14 +16,14 @@ export default function HowWeWork() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 bg-brand-orange/10 text-brand-orange font-display font-extrabold text-xs uppercase tracking-wider rounded-md mb-3">
-            Этапы сотрудничества
+            Этапы оптовой поставки
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-extrabold tracking-tight uppercase leading-tight text-brand-blue">
-            Получить контейнер — <span className="text-brand-orange">просто</span>
+            Получить партию контейнеров — <span className="text-brand-orange">просто</span>
           </h2>
           <div className="w-12 h-1 bg-brand-orange mx-auto mt-4 rounded" />
           <p className="text-brand-grey max-w-xl mx-auto text-sm md:text-base mt-4">
-            Процесс оформления сделки прозрачен на каждом этапе: от первого клика до прибытия контейнера на терминал назначения.
+            Процесс оформления оптовой сделки от 5 шт. прозрачен на каждом этапе: от первого клика до прибытия контейнеров на терминал назначения.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export default function HowWeWork() {
             onClick={handleScrollToQuiz}
             className="inline-flex items-center gap-2 px-6 py-3 bg-brand-blue hover:bg-brand-orange hover:text-brand-blue text-white font-display font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition duration-300 cursor-pointer select-none"
           >
-            <span>Начать подбор контейнера</span>
+            <span>Рассчитать оптовую партию (от 5 шт.)</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
